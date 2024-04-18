@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="MostrarLista()">
+    <a href="Registro.html">Registrar</a>
+    <button id="MostrarDatos">Mostrar</button>
+    <button id="GuardarDatos">Guardar</button>
+
+    <form id="forma">
+        <input type="text" id="ide">
+        <input type="text" id="nombre">
+        <input type="text" id="apellido">
+        <input type="text" id="edad">
+    </form>
+    
+    <button id="btn" onclick="agregarPersona()">Agregar</button>
+
+    <h1 style="text-align: center;">Listado de Personas</h1>
+    <ul style="list-style-type: none;" id="personas"></ul>
+
+    <p id="MostrarLocal">aqui</p>
+
+    <!--<script src="js/app.js"></script>
+    <script src="js/Persona.js"></script>-->
+    <script src="./Funciones/intefaz.js"></script>
+    <script src="./Funciones/logica.js"></script>
+</body>
+</html>
